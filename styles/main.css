@@ -35,7 +35,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-family: "amazonEmberMain";
+  font-family: "amazonEmberMenu";
 }
 
 .menu-item {
@@ -72,7 +72,7 @@ body {
 }
 
 .link:hover {
-  color: #F84BAB;
+  color: #FECB22;
 }
 
 .link-active {
