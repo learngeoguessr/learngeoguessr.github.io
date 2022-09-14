@@ -4,8 +4,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles/main.css" type="text/css"/>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-            <script src="./scripts/main.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="./scripts/main.js" defer></script>
         <title>Learn GeoGuessr!</title>
     </head>
 
@@ -13,37 +14,22 @@
 
 
     <body>
-        <header class="header">
-            <nav class="navigation">
-                <div class="menu">
-                    <a href="javascript: setTimeout(()=>{window.location = '/' },700);" 
-                        class="menu-link menu-item"
-                        onclick="fadeOut()">Learn
-                    </a>
-                    <a href="javascript: setTimeout(()=>{window.location = '/' },700);" 
-                        class="menu-link menu-item"
-                        onclick="fadeOut()">Help us improve!
-                    </a>
-                </div>
-            </nav>
-        </header>
-
-
-        <main>
-            <div id="mySidebar" class="sidebar">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
-              </div>
+        <div class="main">
+            <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+                <a href="#"><span><i class="material-icons">directions_car</i><span class="icon-text">license plates</span></a><br>
+                <a href="#"><i class="material-icons">spa</i><span class="icon-text"></span>services</a></span>
+                </a><br>
+                <a href="#"><i class="material-icons">monetization_on</i><span class="icon-text"></span>clients</span></a><br>
+                <a href="#"><i class="material-icons">email</i><span class="icon-text"></span>contact<span></a>
+            </div>
               
-              <div id="main">
-                <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
-                <h2>Collapsed Sidebar</h2>
-                <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
-              </div>              
-        </main>
+            <div id="main">
+                <h2>Open/Collapse Sidebar on Hover</h2>
+                <p>Hover over any part of the sidebar to open the it.</p>
+                <p>To close the sidebar, move your mouse out of the sidebar.</p>
+            </div>
+        </div>
+        
 
     </body>
 </html>

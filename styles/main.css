@@ -1,6 +1,6 @@
 @font-face {
   font-family: "amazonEmberMain";
-  src: url(../fonts/AmazonEmber_Bd.ttf);
+  src: url(../fonts/AmazonEmber_Th.ttf);
 }
 
 @font-face {
@@ -17,20 +17,6 @@ body {
   width: 100%;
 }
 
-.header {
-  width: 100%;
-  height: 2%;
-  background-color: black;
-  margin: 0%;
-  padding: 0%;
-  border-width: 0%;
-  display: block;
-}
-
-.navigation {
-  text-align: center;
-}
-
 .menu {
   display: flex;
   flex-direction: row;
@@ -39,137 +25,66 @@ body {
   font-family: "amazonEmberMenu";
 }
 
-.menu-item {
-  text-transform: uppercase;
-  padding: 20px;
-  font-size: 120%;
-  padding-left: 3%;
-  padding-right: 3%;
+.icon-text{
+  margin-left: -3rem;
 }
 
-.menu-image {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  width: 100px;
-}
-
-.menu-link {
-  color: #ffffff;
-  text-decoration: none;
-  outline: none;
-  padding-left: 3%;
-  padding-right: 3%;
-}
-
-.menu-link:hover {
-  color: #FECB22;
-}
-
-.link {
-  color: #4BDDE4;
-  text-decoration: none;
-  outline: none;
-}
-
-.link:hover {
-  color: #FECB22;
-}
-
-.link-active {
-  text-decoration: underline;
-  color: #FECB22;
-}
-
-.main {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  font-family: "amazonEmberMain";
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.skin-image {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  width: 250px;
-}
-
-.skin-category {
-  display: inline-block;
+.main{
   width: 100%;
+  font-family: 'amazonEmberMain';
 }
 
-.section {
-  overflow: auto;
-}
-
-.main-color {
-  color: white;
-}
-
-.bottom-left {
+main .sidebar {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  font-size: 1rem;
 }
-
-
-#sidebar
 
 .sidebar {
   height: 100%;
-  width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #111;
-  overflow-x: hidden;
   transition: 0.5s;
+  overflow-x: hidden;
   padding-top: 60px;
+  white-space: nowrap;
 }
 
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1rem;
   color: #818181;
   display: block;
-  transition: 0.3s;
 }
 
 .sidebar a:hover {
   color: #f1f1f1;
 }
 
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+.material-icons,
+.icon-text {
+  vertical-align: middle;
 }
 
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
+.material-icons {
+  padding-bottom: 3px;
+  margin-right: 5rem;
 }
 
-.openbtn:hover {
-  background-color: #444;
+#main {
+  padding: 3rem;
+  margin-left: 20rem;
+  transition: margin-left 0.5s;
 }
 
 @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }
