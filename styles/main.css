@@ -61,7 +61,7 @@ main .sidebar {
 }
 
 .sidebar a:hover {
-  color: #f1f1f1;
+  color: #f8cc16;
 }
 
 .material-icons,
@@ -74,10 +74,13 @@ main .sidebar {
   margin-right: 5rem;
 }
 
-#main {
+#content {
   padding: 3rem;
-  margin-left: 20rem;
   transition: margin-left 0.5s;
+}
+
+.h2title{
+  color: #f8cc16;
 }
 
 @media screen and (max-height: 450px) {
