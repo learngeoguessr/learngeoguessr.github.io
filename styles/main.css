@@ -83,6 +83,11 @@ main .sidebar {
   color: #f8cc16;
 }
 
+.link{
+  color: #f8cc16;
+  text-decoration: none;
+}
+
 @media screen and (max-height: 450px) {
   .sidebar {
     padding-top: 15px;
