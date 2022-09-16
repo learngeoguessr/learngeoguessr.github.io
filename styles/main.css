@@ -83,6 +83,10 @@ main .sidebar {
   color: #f8cc16;
 }
 
+.region{
+  padding-left: 25px;
+}
+
 .link{
   color: #f8cc16;
   text-decoration: none;
