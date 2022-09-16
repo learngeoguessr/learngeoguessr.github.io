@@ -16,27 +16,42 @@
     <body>
         <div class="main">
             <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
-                <a href="/"><span><i class="material-icons">home</i><span class="icon-text">home</span></a><br>
-                <a href="#"><span><i class="material-icons">directions_car</i><span class="icon-text">license plates</span></a><br>
-                <a href="#"><i class="material-icons">spa</i><span class="icon-text"></span>services</a></span></a><br>
-                <a href="#"><i class="material-icons">monetization_on</i><span class="icon-text"></span>clients</span></a><br>
-                <a href="#"><i class="material-icons">email</i><span class="icon-text"></span>contact<span></a>
+                <a href="javascript:showDiv(0);"><i class="material-icons">home</i><span class="icon-text">home</span></a><br>
+                <a href="javascript:showDiv(1);"><i class="material-icons">directions_car</i><span class="icon-text">license plates</span></a><br>
+                <a href="javascript:showDiv(2);"><i class="material-icons">spa</i><span class="icon-text"></span>services</a></span></a><br>
+                <a href="javascript:showDiv(3);"><i class="material-icons">monetization_on</i><span class="icon-text"></span>clients</span></a><br>
+                <a href="javascript:showDiv(4);"><i class="material-icons">email</i><span class="icon-text"></span>contact<span></a>
             </div>
               
             <div id="content">
-                <h2 class="h2title">Welcome to LearnGeoguessr!</h2>
-                <p>
-                    The goal of this site is to help you learn the meta and all the tricks to become the next GeoGuessr prodigy.
-                </p>
-                <p>
-                    <span>Even though there are a few sites out there that are quite useful for learning GeoGuessr,</span><br>
-                    <span>I feel like they are very unorganized and a bit hard to browse, </span><br>
-                    <span>and exactly that's the reason why this site was created.</span>
-                </p><br>
-                <p>
-                    <span>The development of this site is still in progress and your opinion means a lot!</span><br>
-                    <a class="link" href="https://mail.google.com/mail/?view=cm&fs=1&to=throwawayegi@gmail.com&su=Feedback%20for%20LearnGeoguessr">Leave your feedback here</a>
-                </p>
+                <div id="home" class="section">
+                    <h2 class="h2title">Welcome to LearnGeoguessr!</h2>
+                    <p>
+                        The goal of this site is to help you learn the meta and all the tricks to become the next GeoGuessr prodigy.
+                    </p>
+                    <p>
+                        <span>Even though there are a few sites out there that are quite useful for learning GeoGuessr,</span><br>
+                        <span>I feel like they are very unorganized and a bit hard to browse, </span><br>
+                        <span>and exactly that's the reason why this site was created.</span>
+                    </p><br>
+                    <p>
+                        Use the menu on the left side of the screen for easier navigation.
+                    </p><br>
+                    <p>
+                        <span>The development of this site is still in progress and your opinion means a lot!</span><br>
+                        <a class="link" href="https://mail.google.com/mail/?view=cm&fs=1&to=throwawayegi@gmail.com&su=Feedback%20for%20LearnGeoguessr">Leave your feedback here</a>
+                    </p>
+                </div>
+                
+                <div id="licenseplates" class="section">
+                    <h2 class="h2title">License plates</h2><br>
+                    <h3>European plates</h3>
+                    <p>
+                        <img src="./images/plate-403861_640.png" alt="Typical EU plates" style="width: 200px;"><br>
+                        <span>This is an example of a typical EU plate with the blue line on the left side.</span>
+                    </p>
+                </div>
+
             </div>
         </div>
         
