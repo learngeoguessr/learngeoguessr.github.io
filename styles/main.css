@@ -87,10 +87,10 @@ main .sidebar {
 
 .region{
   padding-left: 2%;
-  /* border-width: 0px;
+  border-width: 0px;
   border-left: white;
   border-left-width: 2px;
-  border-style: solid; */
+  border-style: dashed;
 }
 
 .subregion{
