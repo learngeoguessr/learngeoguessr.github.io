@@ -1,37 +1,40 @@
 @font-face {
-  font-family: "amazonEmberMain";
-  src: url(../fonts/AmazonEmber_Th.ttf);
+  font-family: "exoLight";
+  src: url(../fonts/exo-2-0.light.otf);
 }
 
 @font-face {
-  font-family: "amazonEmberMenu";
-  src: url(../fonts/AmazonEmber_He.ttf);
+  font-family: "exoMedium";
+  src: url(../fonts/exo-2-0.medium.otf);
 }
 
+
 body {
+  background-image: linear-gradient(to right, black , rgb(70, 0, 70));
   background-color: black;
   color: #ffffff;
   border-width: 0%;
   margin: 0%;
   padding: 0%;
   width: 100%;
+  font-family: "exoLight";
 }
 
-.menu {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-family: "amazonEmberMenu";
+h1{
+  margin-top: 0%;
+  padding-top: 4.5%;
+}
+
+h2{
+  margin-top: 0.75%;
+}
+
+h3{
+  margin-top: 0%;
 }
 
 .icon-text{
-  margin-left: -3rem;
-}
-
-.main{
-  width: 100%;
-  font-family: 'amazonEmberMain';
+  margin-left: -25%;
 }
 
 main .sidebar {
@@ -45,10 +48,10 @@ main .sidebar {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
-  transition: 0.5s;
+  background-color: rgb(0, 0, 0);
+  transition: 0.6s;
   overflow-x: hidden;
-  padding-top: 60px;
+  padding-top: 10%;
   white-space: nowrap;
 }
 
@@ -56,7 +59,7 @@ main .sidebar {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 1rem;
-  color: #818181;
+  color: #c7c7c7;
   display: block;
 }
 
@@ -70,21 +73,32 @@ main .sidebar {
 }
 
 .material-icons {
-  padding-bottom: 3px;
+  padding-bottom: 1%;
   margin-right: 5rem;
 }
 
 #content {
-  padding: 3rem;
-  transition: margin-left 0.5s;
-}
-
-.h2title{
-  color: #f8cc16;
+  padding-top: 0%;
+  padding-left: 2%;
+  transition: margin-left 0.6s;
+  height: 100%;
+  
 }
 
 .region{
-  padding-left: 25px;
+  padding-left: 2%;
+  /* border-width: 0px;
+  border-left: white;
+  border-left-width: 2px;
+  border-style: solid; */
+}
+
+.subregion{
+  padding-left: 2%;
+  border-width: 0px;
+  border-left: white;
+  border-left-width: 2px;
+  border-style: solid;
 }
 
 .link{
