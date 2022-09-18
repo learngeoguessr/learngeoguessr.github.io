@@ -18,32 +18,50 @@
         <div class="main">
             <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
                 <a onclick="showDiv(0);"><i class="material-icons">home</i><span class="icon-text">home</span></a><br>
-                <a onclick="showDiv(1);"><i class="material-icons">directions_car</i><span class="icon-text">license plates</span></a><br>
-                <a onclick="showDiv(1);"><i class="material-icons">spa</i><span class="icon-text"></span>services</a></span></a><br>
-                <a onclick="showDiv(1);"><i class="material-icons">monetization_on</i><span class="icon-text"></span>clients</span></a><br>
-                <a onclick="showDiv(1);"><i class="material-icons">email</i><span class="icon-text"></span>contact<span></a>
+                <a onclick="showDiv(1);"><i class="material-icons">photo_camera</i><span class="icon-text">meta</span></a><br>
+                <a onclick="showDiv(2);"><i class="material-icons">directions_car</i><span class="icon-text">license plates</span></a><br>
+                <a onclick="showDiv(3);"><i class="material-icons">spa</i><span class="icon-text"></span>services</a></span></a><br>
+                <a onclick="showDiv(4);"><i class="material-icons">monetization_on</i><span class="icon-text"></span>clients</span></a><br>
+                <a onclick="showDiv(5);"><i class="material-icons">email</i><span class="icon-text"></span>contact<span></a>
             </div>
               
             <div id="content">
                 <div id="home" class="section">
                     <h1 class="link">Welcome to LearnGeoguessr!</h1><br>
                     <p>
-                        The goal of this site is to help you learn the meta and all the tricks to become the next GeoGuessr prodigy.
-                    </p>
+                        The site is still work in progress and is ment for begginers! 
+                    </p><br>
+                    <p>
+                        For more experienced GeoGuessr players I recommend <a class="link1" href="https://www.geohints.com/">GeoHints</a> and <a class="link1" href="https://geotips.net/">GeoTips</a><br>
+                        The goal of this site is to help you learn some basic meta and a few tricks to set you on a path of becoming the next GeoGuessr prodigy.
+                    </p><br>
                     <p>
                         <span>Even though there are a few sites out there that are quite useful for learning GeoGuessr,</span><br>
-                        <span>I feel like they are very unorganized and a bit hard to browse, </span><br>
+                        <span>I feel like they are very unorganized and a bit hard to get into for begginers, </span><br>
                         <span>and exactly that's the reason why this site was created.</span>
                     </p><br>
                     <p>
                         Use the menu on the left side of the screen for navigation!
                     </p><br>
                     <p>
-                        <span>The development of this site is still in progress and your opinion means a lot!</span><br>
+                        <span>Your opinion means a lot!</span><br>
                         <a class="link" href="https://mail.google.com/mail/?view=cm&fs=1&to=throwawayegi@gmail.com&su=Feedback%20for%20LearnGeoguessr">Leave your feedback here</a>
                     </p>
                 </div>
+
+
+                <div id="meta" class="section">
+                    <h1 class="link">Meta</h1><br>
+                    <h2>Cameras</h2>
+                    <div class="region">
+                        <p>penis</p>
+                    </div>
+
+                </div>
+
                 
+
+
                 <div id="licenseplates" class="section">
                     <h1 class="link">License plates</h1><br>
                     <h2>European plates</h2>
@@ -137,9 +155,29 @@
                     
                     <h2>American plates</h2>
                     <div class="region">
-
+                        COMING SOON...
+                        <br><br><br>
                     </div>
+                </div>
 
+
+                <div id="donation" class="section">
+                    <h1 class="link">Support this site</h1><br>
+                    <p>
+                        <span>Every bit helps, but donate only if you are sure!</span>
+                    </p><br><br>
+                    <div class="donation_container">
+                        <div id="smart-button-container">
+                            <div style="text-align: center"><label for="description">Description </label><input class="input" type="text" name="descriptionInput" id="description" maxlength="127" value="One for the tip jar"></div>
+                              <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description</p>
+                            <div style="text-align: center; margin-top: -2rem;"><label for="amount">Amount (USD) </label><input class="input" name="amountInput" type="number" id="amount" value=""></div>
+                              <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter an amount</p>
+                            <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value=""></div>
+                              <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
+                            <div style="text-align: center; margin-top: -3rem;" id="paypal-button-container"></div>
+                        </div>
+                        <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+                    </div>
                 </div>
 
             </div>
